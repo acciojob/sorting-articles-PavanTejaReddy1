@@ -24,6 +24,6 @@ const sortedBands = bands.sort((a, b) =>
 	stripArticle(a).localeCompare(stripArticle(b)));
 
 // Insert into the DOM
-document.getElementById("band").innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
+document.getElementById("bands").innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
 
 
